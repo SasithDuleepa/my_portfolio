@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.element {
+  margin: auto auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #f2f3f7;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar-name {
+  font-family: "Playfair Display";
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.occupation-p {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+
+.link {
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  transition: color 0.3s ease;
+  font-size: 12px;
+}
+
+/* Underline effect for both hover and active */
+.link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #2c98f0;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Hover: underline grows from center */
+.link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* Active class: same underline animation as hover */
+.active:after {
+  width: 100%;
+  /* Full underline width */
+  left: 0;
+  /* Align it from the left */
+}
+
+/* Optional: Change text color when active */
+.active {
+  color: #2c98f0;
+
+  transition: color 0.3s ease;
+  /* Smooth text color change */
+}
+
+
+
+
+
+.Body {
+  margin-left: 300px;
+}
+
+.App {
+  display: flex;
+}
+
+
+.page-container {
+  margin: 20px auto;
+  padding: 0px 10px;
 }
