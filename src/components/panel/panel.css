@@ -1,0 +1,51 @@
+.panel-main {
+    width: 100%;
+    padding-right: 50px;
+}
+
+.top-panel {
+    background: #f2f3f7;
+    border: 1px solid #e6e6e6 !important;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-panel-p {
+    padding: 10px 25px;
+    display: block;
+    /* width: 100%; */
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Quicksand", Arial, sans-serif;
+}
+
+.bottom-panel {
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 0;
+    overflow: hidden;
+    /* Hide content when collapsed */
+    opacity: 0;
+    padding: 0 1.5em;
+    /* Padding on left and right */
+    margin-top: 5px;
+    border: 1px solid #e6e6e6 !important;
+
+    /* Transition for smooth expand/collapse */
+    transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+.bottom-panel.expanded {
+    height: 100px;
+    /* Expanded height */
+    opacity: 1;
+    /* Fully visible */
+    padding: 1.5em;
+    /* Restoring padding on all sides */
+}

@@ -1,0 +1,20 @@
+.card1-container {
+    background-color: aliceblue;
+    width: 80px;
+    height: 100px;
+    padding: 30px 50px;
+    border-bottom: 2px solid blue;
+    margin: 50px auto;
+}
+
+.card1-icon {
+    width: 40px;
+    color: blue;
+}
+
+.card1-p {
+    font-family: "Quicksand", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px auto;
+}

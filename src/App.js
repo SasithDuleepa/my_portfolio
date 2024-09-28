@@ -11,7 +11,6 @@ import Home from './home/home';
 import Experience from './experience/experience';
 import Education from './education/education';
 import Contact from './contact/contact';
-import Blog from './blog/blog';
 import About from './about/about';
 
 
@@ -97,10 +96,10 @@ function App() {
       <Link
       className="link"
       activeClass="active"
-      to="blog"
+      to="work"
       spy={true}
       smooth={true}
-      >BLOG</Link>
+      >WORK</Link>
       <Link
       className="link"
       activeClass="active"
@@ -138,8 +137,8 @@ function App() {
     <Element name="education" className="element">
       <Education/>
     </Element>
-    <Element name="blog" className="element">
-      <Blog/>
+    <Element name="work" className="element">
+      <Work/>
     </Element>
     <Element name="contact" className="element">
       <Contact/>

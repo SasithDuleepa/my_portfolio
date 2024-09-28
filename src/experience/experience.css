@@ -1,0 +1,65 @@
+.experience-card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-card-div {
+    display: flex;
+    margin: 20px auto;
+}
+
+.exp-card-circle {
+    width: 40px;
+    height: 40px;
+    background-color: brown;
+    border-radius: 100px;
+    border: 5px solid #f2f3f7;
+
+}
+
+.exp-card-arrow {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 15px solid #f2f3f7;
+    border-bottom: 20px solid transparent;
+
+    margin-left: 5px;
+}
+
+.exp-card-container {
+    height: 200px;
+    width: 700px;
+    background-color: #f2f3f7;
+    margin-top: -20px;
+    padding: 10px 20px;
+}
+
+.exp-p-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.exp-p1 {
+    font-size: 20px;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 500;
+
+}
+
+.exp-p2 {
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    opacity: .4;
+
+}
+
+.exp-p3 {
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.7);
+}
