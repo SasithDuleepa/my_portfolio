@@ -9,9 +9,9 @@ export default function Education() {
       <p className='edu-p2'>Education</p>
 
       <div className='edu-panel-container'>
-        <Panel/>
-        <Panel/>
-        <Panel/>
+        <Panel header='bsc hons in computer science' body='
+        i studied batchlor of science hons degree in computer science at wrexham university United Kingdom'/>
+        <Panel header='Information technology - NDT' body=''/>
       </div>
     </div>
   )
