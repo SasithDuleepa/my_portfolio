@@ -14,7 +14,7 @@ export default function Skills() {
     <div className='skills-bar-container'>
 
       <div className='skill-bar'>
-        <label className='skill-bar-label'>Photoshop</label>
+        <label className='skill-bar-label'>React.js</label>
         <div className='skill-progress-bar'>
           <div className='skill-progress-bar-line progress1'></div>
           <div className='skill-progress-bar-circle1'></div>
@@ -23,7 +23,7 @@ export default function Skills() {
       </div>
 
       <div className='skill-bar'>
-        <label className='skill-bar-label'>Photoshop</label>
+        <label className='skill-bar-label'>Node.js</label>
         <div className='skill-progress-bar'>
           <div className='skill-progress-bar-line progress2'></div>
           <div className='skill-progress-bar-circle2'></div>
@@ -32,7 +32,7 @@ export default function Skills() {
       </div>
 
       <div className='skill-bar'>
-        <label className='skill-bar-label'>Photoshop</label>
+        <label className='skill-bar-label'>CSS</label>
         <div className='skill-progress-bar'>
           <div className='skill-progress-bar-line progress3'></div>
           <div className='skill-progress-bar-circle3'></div>
@@ -41,7 +41,7 @@ export default function Skills() {
       </div>
 
       <div className='skill-bar'>
-        <label className='skill-bar-label'>Photoshop</label>
+        <label className='skill-bar-label'>Tailwind CSS</label>
         <div className='skill-progress-bar'>
           <div className='skill-progress-bar-line progress4'></div>
           <div className='skill-progress-bar-circle4'></div>
@@ -50,7 +50,7 @@ export default function Skills() {
       </div>
 
       <div className='skill-bar'>
-        <label className='skill-bar-label'>Photoshop</label>
+        <label className='skill-bar-label'>Arduino</label>
         <div className='skill-progress-bar'>
           <div className='skill-progress-bar-line progress5'></div>
           <div className='skill-progress-bar-circle5'></div>
@@ -59,7 +59,7 @@ export default function Skills() {
       </div>
 
       <div className='skill-bar'>
-        <label className='skill-bar-label'>Photoshop</label>
+        <label className='skill-bar-label'>Python</label>
         <div className='skill-progress-bar'>
           <div className='skill-progress-bar-line progress6'></div>
           <div className='skill-progress-bar-circle6'></div>

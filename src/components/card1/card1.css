@@ -5,11 +5,16 @@
     padding: 30px 50px;
     border-bottom: 2px solid blue;
     margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card1-icon {
-    width: 40px;
-    color: blue;
+    width: 50px;
+    margin-top: 10px;
+
 }
 
 .card1-p {

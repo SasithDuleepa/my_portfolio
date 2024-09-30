@@ -1,6 +1,9 @@
 .panel-main {
-    width: 100%;
-    padding-right: 50px;
+
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
 }
 
 .top-panel {

@@ -74,9 +74,9 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+
     /* background-color: rgb(46, 198, 198); */
-    padding: 20px 30px;
+    padding: 20px 0px;
     width: 45%;
     gap: 10px;
 

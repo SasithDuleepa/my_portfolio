@@ -1,7 +1,19 @@
+.home-page-container {
+    width: 100%;
+    position: relative;
+
+}
+
+
 .slide1 {
 
     height: 100vh;
+    width: 100%;
+    width: max-content;
+
     animation: aa 3s ease;
+    position: relative;
+    margin: auto -25px;
 }
 
 
@@ -11,6 +23,9 @@
 .slide2 {
 
     height: 100vh;
+    position: relative;
+    margin: auto -25px;
+
 
     animation: aaa 3s ease;
 }

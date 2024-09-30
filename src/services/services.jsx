@@ -11,9 +11,7 @@ export default function Services() {
       <Card2/>
       <Card2/>
       <Card2/>
-      <Card2/>
-      <Card2/>
-      <Card2/>
+
 
       </div>
 

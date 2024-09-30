@@ -18,7 +18,7 @@ export default function Home() {
 
 
   return (
-    <div className='page-container'>
+    <div className='home-page-container'>
 
       <img src={currectSlide === 0 ? Image1 : Image2} alt="Image 1" className={currectSlide === 0 ? 'slide1' : 'slide2'} />
 

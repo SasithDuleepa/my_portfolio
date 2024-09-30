@@ -1,4 +1,6 @@
-.about-page-container {}
+.about-page-container {
+    padding-right: 20px;
+}
 
 .about-p {
     margin-bottom: 15px;

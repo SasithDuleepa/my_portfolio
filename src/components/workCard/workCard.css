@@ -4,6 +4,7 @@
     background-color: aqua;
     transition: 0.4s;
     overflow: hidden;
+    box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
 }
 
 .work-card-main:hover .work-card-main-shade {
@@ -17,4 +18,24 @@
     transition: 0.4s;
     position: relative;
     z-index: 1;
+}
+
+.work-card-title {
+    z-index: 1;
+    position: relative;
+    top: 1px;
+    margin-top: -0px;
+
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Quicksand", Arial, sans-serif;
+    color: rgb(237, 237, 237);
+    transition: 0.5s;
+}
+
+.work-card-main:hover .work-card-title {
+    transform: translateY(-50px);
+
+
 }
