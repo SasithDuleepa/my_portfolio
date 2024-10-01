@@ -13,6 +13,8 @@ import Education from './education/education';
 import Contact from './contact/contact';
 import About from './about/about';
 
+import My from './../src/assets/my3.png';
+
 
 function App() {
 
@@ -41,114 +43,116 @@ function App() {
   }, []);
 
    return (
-    <div className='App'>
+    <div>
+          <div className='App'>
 
-      <div className='Sidebar'>
-        <p className='sidebar-name'>Sasith Duleepa</p>
+<div className='Sidebar'>
+  <img src={My} alt="My" className='sidebar-img'/>
+  <p className='sidebar-name'>Sasith Duleepa</p>
 
-        <p className='occupation-p'>SOFTWARE ENGINEER IN SRI LANKA</p>
-
-    
-
-        <Link
-      className="link"
-      activeClass="link active"
-      to="home"
-      spy={true}
-      smooth={true}
-      >HOME</Link>
-
-        <Link
-      className="link"
-      activeClass="active"
-      to="about"
-      spy={true}
-      smooth={true}
-      >ABOUT</Link>
-      <Link
-      className="link"
-      activeClass="active"
-      to="skills"
-      spy={true}
-      smooth={true}
-      >SKILLS</Link>
-      <Link
-      className="link"
-      activeClass="active"
-      to="services"
-      spy={true}
-      smooth={true}
-      >SERVICES</Link>
-      <Link
-      className="link"
-      activeClass="active"
-      to="experience"
-      spy={true}
-      smooth={true}
-      >EXPERIENCE</Link>
-      <Link
-      className="link"
-      activeClass="active"
-      to="education"
-      spy={true}
-      smooth={true}
-      >EDUCATION</Link>
-      <Link
-      className="link"
-      activeClass="active"
-      to="work"
-      spy={true}
-      smooth={true}
-      >WORK</Link>
-      <Link
-      className="link"
-      activeClass="active"
-      to="contact"
-      spy={true}
-      smooth={true}
-      >CONTACT</Link>
-  
+  <p className='occupation-p'>SOFTWARE ENGINEER IN SRI LANKA</p>
 
 
 
+  <Link
+className="link"
+activeClass="link active"
+to="home"
+spy={true}
+smooth={true}
+>HOME</Link>
+
+  <Link
+className="link"
+activeClass="active"
+to="about"
+spy={true}
+smooth={true}
+>ABOUT</Link>
+<Link
+className="link"
+activeClass="active"
+to="skills"
+spy={true}
+smooth={true}
+>SKILLS</Link>
+<Link
+className="link"
+activeClass="active"
+to="services"
+spy={true}
+smooth={true}
+>SERVICES</Link>
+<Link
+className="link"
+activeClass="active"
+to="experience"
+spy={true}
+smooth={true}
+>EXPERIENCE</Link>
+<Link
+className="link"
+activeClass="active"
+to="education"
+spy={true}
+smooth={true}
+>EDUCATION</Link>
+<Link
+className="link"
+activeClass="active"
+to="work"
+spy={true}
+smooth={true}
+>WORK</Link>
+<Link
+className="link"
+activeClass="active"
+to="contact"
+spy={true}
+smooth={true}
+>CONTACT</Link>
 
 
 
 
-  
-      </div>
-      <div className='Body'>
-            {/* Element components that act as scroll targets */}
-    <Element name="home" className="element">
-      <Home/>
-    </Element>
-    <Element name="about" className="element">
-      <About/>
-    </Element>
-    <Element name="skills" className="element">
-      <Skills/>
-    </Element>
-    <Element name="services" className="element">
-      <Services/>
-    </Element>
-    <Element name="experience" className="element">
-      <Experience/>
-    </Element>
-    <Element name="education" className="element">
-      <Education/>
-    </Element>
-    <Element name="work" className="element">
-      <Work/>
-    </Element>
-    <Element name="contact" className="element">
-      <Contact/>
-    </Element>
-      </div>
 
 
 
 
+
+</div>
+<div className='Body'>
+      {/* Element components that act as scroll targets */}
+<Element name="home" className="element">
+<Home/>
+</Element>
+<Element name="about" className="element">
+<About/>
+</Element>
+<Element name="skills" className="element">
+<Skills/>
+</Element>
+<Element name="services" className="element">
+<Services/>
+</Element>
+<Element name="experience" className="element">
+<Experience/>
+</Element>
+<Element name="education" className="element">
+<Education/>
+</Element>
+<Element name="work" className="element">
+<Work/>
+</Element>
+<Element name="contact" className="element">
+<Contact/>
+</Element>
+</div>
+</div>
+
+<p className='bottom-text'>© Copyright 2024 All rights reserved.</p>
     </div>
+
   );
 }
 

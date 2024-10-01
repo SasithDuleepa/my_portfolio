@@ -1,19 +1,19 @@
 import React from 'react';
 import './card2.css';  
-import Icon from './../../assets/dns.png'
 
-export default function Card2() {
+
+export default function Card2(props) {
   return (
     <div className='card2-container'>
 
         <div className='hexagon'>
-            <img className='card2-img' src={Icon} alt="" />
+            <img className='card2-img' src={props.icon} alt="" />
 
             
         </div>
 
-        <p className='card2-p1'>SOFTWARE</p>
-            <p className='card2-p2'>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+        <p className='card2-p1'>{props.title}</p>
+            <p className='card2-p2'>{props.content}</p>
       
     </div>
   )

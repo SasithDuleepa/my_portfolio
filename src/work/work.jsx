@@ -15,10 +15,10 @@ export default function Work() {
             <p className='work-p2'>RECENT WORK</p>
 
       <div className='work-card-container'>
-        <WorkCard image = 'img1'/>
-        <WorkCard image = 'img2'/>
-        <WorkCard image = 'img3'/>
-        <WorkCard image = 'img4'/>
+        <WorkCard image = 'img1' title=' TRAVEL WEB SITE'/>
+        <WorkCard image = 'img2' title= 'INVENTORY MANAGEMENT SYSTEM'/>
+        <WorkCard image = 'img3' title='SMART GREEN HOUSE'/>
+        <WorkCard image = 'img4' title='POS SYSTEM'/>
       </div>
     </div>
   )

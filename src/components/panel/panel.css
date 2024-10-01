@@ -26,6 +26,21 @@
     font-family: "Quicksand", Arial, sans-serif;
 }
 
+.panel-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.panel-icon {
+    width: 22px;
+}
+
 .bottom-panel {
     color: #333333;
     display: flex;
@@ -38,6 +53,7 @@
     padding: 0 1.5em;
     /* Padding on left and right */
     margin-top: 5px;
+    margin-bottom: 10px;
     border: 1px solid #e6e6e6 !important;
 
     /* Transition for smooth expand/collapse */

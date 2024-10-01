@@ -16,6 +16,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0px;
+}
+
+.sidebar-img {
+  width: 100px;
+  border-radius: 100px;
 }
 
 .sidebar-name {
@@ -103,4 +109,17 @@
 .page-container {
   margin: 20px auto;
   padding: 0px 10px;
+}
+
+
+.bottom-text {
+  position: fixed;
+  bottom: -15px;
+  text-align: center;
+  color: #525252;
+  font-weight: 500;
+  letter-spacing: 2px;
+  width: 100%;
+  background-color: #f2f3f7;
+  padding: 2px 0px;
 }

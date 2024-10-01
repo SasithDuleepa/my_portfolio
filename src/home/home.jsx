@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react';
 import './home.css';
 
 
-import Image1 from './../assets/me.jpeg';
-import Image2 from './../assets/sasith.jpg';
+import Image1 from './../assets/my1.png';
+import Image2 from './../assets/my2.png';
+
+import Download from './../assets/download.png';
 
 export default function Home() {
   const [currectSlide, setCurrentSlide] = useState(0);
@@ -24,10 +26,13 @@ export default function Home() {
 
 
       <div className='home-text-container'>
-        <h1>Hi! I'm sasith</h1>
-        <p>Full Stack Developer</p>
+        <h1 className='home-text-p1'>Hi!<br/> I'm sasith</h1>
+        <p  className='home-text-p2'>Full Stack Developer</p>
 
-        <button>Download CV</button>
+        <button className='cv-btn'>
+          <p className='cv-btn-text'>DOWNLOAD CV</p>
+          <img src={Download} alt="Download" className='download-icon' />
+        </button>
 
       </div>
 

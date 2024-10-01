@@ -1,10 +1,25 @@
 .work-card-main {
+    position: relative;
     width: 200px;
     height: 200px;
     background-color: aqua;
     transition: 0.4s;
     overflow: hidden;
     box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    animation: left-right 2s ease;
+
+
+}
+
+@keyframes left-right {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .work-card-main:hover .work-card-main-shade {
@@ -25,6 +40,7 @@
     position: relative;
     top: 1px;
     margin-top: -0px;
+    margin-left: 5px;
 
     font-size: 16px;
     font-weight: 700;

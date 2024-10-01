@@ -8,7 +8,7 @@ export default function WorkCard(props) {
 
       <div  className='work-card-main-shade'></div>
 
-      <p className='work-card-title'>Inventory management system</p>
+      <p className='work-card-title'>{props.title}</p>
       
     </div>
   )

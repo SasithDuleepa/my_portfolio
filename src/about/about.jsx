@@ -15,9 +15,19 @@ export default function About() {
       <p className='about-p1'>WHO AM I ?</p>
       
 
-      <p className='about-p2'>Hi I'm Jackson Ford On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+      <p className='about-p2'>In a world woven with code and creativity, there exists a developer named Sasith,         
+        who dances between the lines of logic and imagination. Born with an insatiable curiosity for all things digital,
+         he embarked on a journey to master the realms of web development. With React and Node as his trusted companions,
+         he transforms ideas into interactive experiences, blending functionality with flair.</p>
 
-      <p className='about-p3'>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+      <p className='about-p3'>But Sasith’s story doesn’t stop at lines of code. His passion for innovation led him to build IoT solutions, 
+        like automating a greenhouse where technology and nature co-exist in perfect harmony.
+         A self-motivated explorer, he thrives in the unknown, constantly learning and crafting solutions for every challenge that comes his way.
+         
+         </p>
+         <p className='about-p3'>
+         This is not just the story of a developer; it’s the story of someone who believes that every project holds a new adventure. And for Sasith, the adventure has only just begun.
+         </p>
     
     <div className='about-card-container'>
       <Card1 icon = {Frontend} title = 'Frontend Developer'/>
