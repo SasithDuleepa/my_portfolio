@@ -16,7 +16,7 @@ export default function Panel(props) {
               <img src={expand ? Minus : Plus} alt="" className='panel-icon'/>
             }</button>
         </div>
-        <div className={`bottom-panel ${expand ? 'expanded' : ''}`}>{props.body}</div>
+        <div className={`bottom-panel  body-p1 ${expand ? 'expanded' : ''}`}>{props.body}</div>
         
       
     </div>

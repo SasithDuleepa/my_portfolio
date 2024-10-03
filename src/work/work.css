@@ -1,29 +1,10 @@
 .work-card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-.work-p1 {
-    margin-bottom: 15px;
-    display: block;
-    font-size: 10px;
-    text-transform: uppercase;
-    color: #999999;
-    font-weight: 500;
-    letter-spacing: 5px;
-}
-
-.work-p2 {
-    font-size: 18px;
-
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 1.8;
-    position: relative;
-    font-family: "Playfair Display", Georgia, serif;
-}
 
 .img1 {
     background-image: url('./../assets/travel.png');
@@ -44,3 +25,5 @@
     background-image: url('./../assets/pos.png');
     background-size: cover;
 }
+
+@media (max-width:1400px) {}

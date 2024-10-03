@@ -6,9 +6,9 @@ import Card1 from '../components/card1/card1';
 export default function Skills() {
   return (
     <div className='skills-container'>
-      <p className='skills-p1'>My Specialty</p>
-      <p className='skills-p2'>My Skills</p>
-      <p className='skills-p3'>Venturing into the world of tech, Sasith braved the wilds of JavaScript and scaled the heights of React and Node. 
+      <p className='header-p1'>My Specialty</p>
+      <p className='header-p2'>My Skills</p>
+      <p className='body-p1'>Venturing into the world of tech, Sasith braved the wilds of JavaScript and scaled the heights of React and Node. 
         With each challenge—from CSS quirks to backend mysteries—he sharpened his skills. Now armed with HTML, CSS, JavaScript, React, Node.js
         , and more, Sasith creates seamless digital experiences, constantly adding new tools to his arsenal, ready for his next adventure.</p>
 

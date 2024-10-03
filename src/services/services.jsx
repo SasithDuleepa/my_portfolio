@@ -9,8 +9,8 @@ import Icon3 from '../assets/iot-solution.png';
 export default function Services() {
   return (
     <div className='service-container'>
-      <p className='service-p1'>What I do ?</p>
-      <p className='service-p2'>Here are some of my <br/> expertise</p>
+      <p className='header-p1'>What I do ?</p>
+      <p className='header-p2'>Here are some of my <br/> expertise</p>
       <div className='service-card-container'>
       <Card2 icon={Icon1} title='SYSTEM DEVELOPMENT' content='Building cloud-based systems with a focus on meeting all requirements.
       '/>

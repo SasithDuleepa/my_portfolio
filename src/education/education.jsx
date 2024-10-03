@@ -7,8 +7,8 @@ import Panel from '../components/panel/panel';
 export default function Education() {
   return (
     <div className='edu-page-container'>
-      <p className='edu-p1'>Education</p>
-      <p className='edu-p2'>Education</p>
+      <p className='header-p1'>Education</p>
+      <p className='header-p2'>Education</p>
 
       <div className='edu-panel-container'>
         <Panel header='bsc hons in computer science' body='Wrexham University, United Kingdom,

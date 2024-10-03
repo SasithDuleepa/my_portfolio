@@ -61,10 +61,26 @@
 }
 
 .bottom-panel.expanded {
-    height: 100px;
+    height: max-content;
+    margin: 10px auto;
     /* Expanded height */
     opacity: 1;
     /* Fully visible */
     padding: 1.5em;
     /* Restoring padding on all sides */
+}
+
+
+@media (max-width:1400px) {
+    .panel-main {
+
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+        margin: auto;
+
+    }
 }

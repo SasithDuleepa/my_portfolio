@@ -11,8 +11,8 @@ import WorkCard from '../components/workCard/workCard';
 export default function Work() {
   return (
     <div className='page-container'>
-            <p className='work-p1'>MY WORK</p>
-            <p className='work-p2'>RECENT WORK</p>
+            <p className='header-p1'>MY WORK</p>
+            <p className='header-p2'>RECENT WORK</p>
 
       <div className='work-card-container'>
         <WorkCard image = 'img1' title=' TRAVEL WEB SITE'/>

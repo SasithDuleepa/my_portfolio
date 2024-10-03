@@ -23,3 +23,32 @@
     font-weight: 500;
     margin: 30px auto;
 }
+
+@media (max-width:1400px) {
+    .card1-container {
+        background-color: aliceblue;
+        width: 55px;
+        height: 80px;
+        padding: 30px 50px;
+        border-bottom: 2px solid blue;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card1-icon {
+        width: 40px;
+        margin-top: 20px;
+
+    }
+
+    .card1-p {
+        font-family: "Quicksand", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 30px auto;
+    }
+
+}

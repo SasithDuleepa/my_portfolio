@@ -7,13 +7,13 @@
 
 .slide1 {
 
-    height: 100vh;
+    /* height: 100vh; */
 
     width: 100%;
 
     animation: aa 4s ease;
     position: relative;
-    margin: auto -25px;
+    /* margin: auto -25px; */
 }
 
 
@@ -23,9 +23,9 @@
 
 .slide2 {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
-    margin: auto -25px;
+    /* margin: auto -25px; */
 
 
     animation: aaa 4s ease;
@@ -85,12 +85,12 @@
 .home-text-container {
     position: absolute;
     top: 20%;
-    left: 5%;
-    width: 600px;
+    left: 8%;
+
 }
 
 .home-text-p1 {
-    font-size: 60px;
+    font-size: 70px;
     line-height: 1.3;
     font-weight: 700;
     color: black;
@@ -98,7 +98,7 @@
 }
 
 .home-text-p2 {
-    font-size: 18px;
+    font-size: 26px;
     line-height: 1.5;
     margin-bottom: 30px;
     font-weight: 300;
@@ -110,17 +110,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 0px 3vw;
     gap: 20px;
     background-color: transparent;
+    border: 1px solid black;
 
     cursor: pointer;
-    margin-top: 100px;
+    margin-top: 6vw;
 
 }
 
 .cv-btn-text {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
     font-family: "Quicksand", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.669);
@@ -130,5 +131,62 @@
 }
 
 .download-icon {
-    width: 20px;
+    width: 30px;
+}
+
+
+@media (max-width: 1400px) {
+
+
+    .home-text-container {
+        position: absolute;
+        top: 2%;
+        left: 8%;
+
+    }
+
+    .home-text-p1 {
+        font-size: 28px;
+        line-height: 1.3;
+        font-weight: 700;
+        color: black;
+        font-family: "Playfair Display", Georgia, serif;
+    }
+
+    .home-text-p2 {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        font-weight: 300;
+        font-family: "Quicksand", Arial, sans-serif;
+        color: rgba(0, 0, 0, 0.564);
+    }
+
+    .cv-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: -10px 0vw;
+        gap: 8px;
+        background-color: transparent;
+
+        cursor: pointer;
+        margin-top: 4vw;
+
+    }
+
+    .cv-btn-text {
+        font-size: 8px;
+        font-weight: 300;
+        font-family: "Quicksand", Arial, sans-serif;
+        color: rgba(0, 0, 0, 0.669);
+        letter-spacing: 0.8px;
+
+
+    }
+
+    .download-icon {
+        width: 12px;
+    }
+
 }

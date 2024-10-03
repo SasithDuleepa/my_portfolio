@@ -2,9 +2,11 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.css';
 
-import Location from './../assets/location.gif'
-import Call from './../assets/contact.gif'
-import Linkedin from './../assets/linkedin.gif'
+import Location from '../assets/map.png';
+import Linkedin from '../assets/linkedin.png';
+import Github from '../assets/github.png';
+import Gmail from '../assets/gmail.png';
+
 
 
 export default function Contact() {
@@ -29,8 +31,8 @@ export default function Contact() {
   
   return (
     <div className='contact-container'>
-      <p className='contact-p1'>GET IN TOUCH</p>
-      <p className='contact-p2'>CONTACT</p>
+      <p className='header-p1'>GET IN TOUCH</p>
+      <p className='header-p2'>CONTACT</p>
 
       <div className='contact-div'>
         <div className='contact-info'>
@@ -39,11 +41,15 @@ export default function Contact() {
               <p className='contact-p3'>no.870, Unagalawehera, Polonnaruwa, Sri Lanka.</p>
           </div>
           <div className='contact-info-sub'>
-            <img src={Call} className='contact-icon'/>
-            <p className='contact-p3'>000 00 00 000</p>
+            <img src={Gmail} className='contact-icon'/>
+            <p className='contact-p3'>duleepajayathissa@gmail.com</p>
           </div>
           <div className='contact-info-sub'>
-            <img src={Linkedin} className='contact-icon'/>
+            <a  href='https://www.linkedin.com/in/sasith-duleepa/'>  <img src={Linkedin} className='contact-icon'/></a>
+            <p className='contact-p3'>Sasith Duleepa</p>
+          </div>
+          <div className='contact-info-sub'>
+            <a href='https://github.com/SasithDuleepa'><img src={Github} className='contact-icon'/></a>
             <p className='contact-p3'>Sasith Duleepa</p>
           </div>
           
