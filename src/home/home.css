@@ -1,6 +1,7 @@
 .home-page-container {
     width: 100%;
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -137,10 +138,40 @@
 
 @media (max-width: 1400px) {
 
+    .slide1 {
+
+        height: 75vh;
+        width: 200%;
+        margin-left: -60%;
+
+
+
+        animation: aa 4s ease;
+        position: relative;
+        /* margin: auto -25px; */
+    }
+
+
+
+
+
+
+    .slide2 {
+        height: 75vh;
+        width: 200%;
+        margin-left: -20%;
+        position: relative;
+        /* margin: auto -25px; */
+
+
+        animation: aaa 4s ease;
+    }
+
+
 
     .home-text-container {
         position: absolute;
-        top: 2%;
+        top: 50%;
         left: 8%;
 
     }
