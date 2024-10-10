@@ -69,108 +69,25 @@ function App() {
 
    return (
     <div>
-      {isWidth1400 ? null
-       : <button className={show ? "sidebar_btn-show":"sidebar_btn-hide" } onClick={()=>setShow(!show)}> 
-       <img src={show ? Close : Menu} className='sidemenu-icon' /></button>}
+<button className={show ? "sidebar_btn-show":"sidebar_btn-hide" } onClick={()=>setShow(!show)}> 
+       <img src={show ? Close : Menu} className='sidemenu-icon' /></button>
       
       
           <div className='App'>
 
 
 
-{isWidth1400 ?
-
- <div className='Sidebar'>
-  <img src={My} alt="My" className='sidebar-img'/>
-  <p className='sidebar-name'>Sasith Duleepa</p>
-
-  <p className='occupation-p'>SOFTWARE ENGINEER IN SRI LANKA</p>
-
-
-
-  <Link
-className="link"
-activeClass="link active"
-to="home"
-spy={true}
-smooth={true}
-duration={1500}
-offset={-100}
-
->HOME</Link>
-
-  <Link
-className="link"
-activeClass="active"
-to="about"
-spy={true}
-smooth={true}
->ABOUT</Link>
-<Link
-className="link"
-activeClass="active"
-to="skills"
-spy={true}
-smooth={true}
->SKILLS</Link>
-<Link
-className="link"
-activeClass="active"
-to="services"
-spy={true}
-smooth={true}
->SERVICES</Link>
-<Link
-className="link"
-activeClass="active"
-to="experience"
-spy={true}
-smooth={true}
->EXPERIENCE</Link>
-<Link
-className="link"
-activeClass="active"
-to="education"
-spy={true}
-smooth={true}
->EDUCATION</Link>
-<Link
-className="link"
-activeClass="active"
-to="work"
-spy={true}
-smooth={true}
->WORK</Link>
-<Link
-className="link"
-activeClass="active"
-to="contact"
-spy={true}
-smooth={true}
-
->CONTACT</Link>
-
-
-
-
-
-
-
-
-
-</div> 
- : 
-<div  className={show ? 'Sidebar_ show':' Sidebar_ hide'}>
+<div  className={show ? 'Sidebar':' Sidebar-hide'}>
   
-<img src={My} alt="My" className='sidebar-img_'/>
-<p className='sidebar-name_'>Sasith Duleepa</p>
+<img src={My} alt="My" className='sidebar-img'/>
+<p className='sidebar-name'>Sasith Duleepa</p>
 
-<p className='occupation-p_'>SOFTWARE ENGINEER IN SRI LANKA</p>
+<p className='occupation-p'>SOFTWARE ENGINEER IN SRI LANKA</p>
 
 
 
 <Link
-className="link_"
+className="link"
 activeClass="link active"
 to="home"
 spy={true}
@@ -181,49 +98,49 @@ offset={-100}
 >HOME</Link>
 
 <Link
-className="link_"
+className="link"
 activeClass="active"
 to="about"
 spy={true}
 smooth={true}
 >ABOUT</Link>
 <Link
-className="link_"
+className="link"
 activeClass="active"
 to="skills"
 spy={true}
 smooth={true}
 >SKILLS</Link>
 <Link
-className="link_"
+className="link"
 activeClass="active"
 to="services"
 spy={true}
 smooth={true}
 >SERVICES</Link>
 <Link
-className="link_"
+className="link"
 activeClass="active"
 to="experience"
 spy={true}
 smooth={true}
 >EXPERIENCE</Link>
 <Link
-className="link_"
+className="link"
 activeClass="active"
 to="education"
 spy={true}
 smooth={true}
 >EDUCATION</Link>
 <Link
-className="link_"
+className="link"
 activeClass="active"
 to="work"
 spy={true}
 smooth={true}
 >WORK</Link>
 <Link
-className="link_"
+className="link"
 activeClass="active"
 to="contact"
 spy={true}
@@ -242,7 +159,7 @@ smooth={true}
 </div>
 
 
-}
+
 
 
 

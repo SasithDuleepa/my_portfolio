@@ -1,6 +1,7 @@
 .skills-container {
     display: flex;
     flex-direction: column;
+    padding: 0px 0px;
 
 }
 
@@ -172,6 +173,10 @@
 
 
 @media (max-width: 1400px) {
+    .skills-container {
+        padding: 0px 10px;
+    }
+
     .skills-bar-container {
         display: flex;
         flex-direction: column;
@@ -180,6 +185,7 @@
         width: 100%;
         flex-wrap: wrap;
         gap: 50px;
+
     }
 
     .skill-bar {

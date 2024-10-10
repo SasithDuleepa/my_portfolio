@@ -4,7 +4,7 @@
 
 .App {
   display: flex;
-  justify-content: left;
+
 
 }
 
@@ -13,11 +13,29 @@
   height: 100vh;
   background-color: #f2f3f7;
   position: fixed;
+  top: 0px;
+  left: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px 0px;
-  z-index: 4;
+  z-index: 2;
+  transition: 1s;
+}
+
+.Sidebar-hide {
+  width: 250px;
+  height: 100vh;
+  background-color: #f2f3f7;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  z-index: 2;
+  transition: 1s;
 }
 
 .sidebar-img {
@@ -169,130 +187,21 @@
 }
 
 
-/* sidebar small */
+/* sidebar icon */
 
 .sidemenu-icon {
-  width: 20px;
+  display: none;
 }
 
 .sidebar_btn-show {
-  position: fixed;
-  top: 20px;
-  left: 165px;
-  z-index: 5;
-  transition: 1s;
-  background-color: transparent;
-  border: none;
+  display: none;
 
 }
 
 .sidebar_btn-hide {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 5;
-  transition: 0.8s;
-  background-color: transparent;
-  border: none;
+  display: none;
 
 }
-
-.Sidebar_ {
-  width: 200px;
-  height: 100vh;
-  background-color: #f2f3f7;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 4;
-  transform: translateX(-270px);
-  transition: 1s;
-  overflow-y: scroll;
-
-}
-
-.show {
-  transform: translateX(-0px);
-}
-
-.hide {
-  transform: translateX(270);
-}
-
-.sidebar-img_ {
-  width: 80px;
-  border-radius: 100px;
-}
-
-.sidebar-name_ {
-  font-family: "Playfair Display";
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 1px;
-
-
-}
-
-.occupation-p_ {
-  font-family: "Quicksand", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 1.8;
-  color: rgba(0, 0, 0, 0.7);
-  width: 70%;
-  text-align: center;
-}
-
-
-.link_ {
-  color: rgba(0, 0, 0, 0.7);
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-  display: inline-block;
-  padding: 15px 20px;
-  position: relative;
-  transition: color 0.3s ease;
-  font-size: 10px;
-}
-
-/* Underline effect for both hover and active */
-.link_:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  background: #2c98f0;
-  bottom: 0;
-  left: 50%;
-  transition: width 0.3s ease, left 0.3s ease;
-}
-
-/* Hover: underline grows from center */
-.link_:hover:after {
-  width: 100%;
-  left: 0;
-}
-
-/* Active class: same underline animation as hover */
-.active_:after {
-  width: 100%;
-  /* Full underline width */
-  left: 0;
-  /* Align it from the left */
-}
-
-/* Optional: Change text color when active */
-.active_ {
-  color: #2c98f0;
-
-  transition: color 0.3s ease;
-  /* Smooth text color change */
-}
-
-
-
 
 
 /* Custom breakpoint example */
@@ -300,8 +209,74 @@
   .App {
     width: 100vw;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .Sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #f2f3f7;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .Sidebar-hide {
+    width: 250px;
+    height: 100vh;
+    background-color: #f2f3f7;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    z-index: 2;
+    transform: translateX(-255px);
+    transition: 1s;
+  }
+
+
+  .sidemenu-icon {
+    width: 20px;
+    display: block;
+
+  }
+
+  .sidebar_btn-show {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    transition: 1s;
+    background-color: transparent;
+    border: none;
+    transform: rotate(360deg);
+    transition: 1s;
+
+  }
+
+  .sidebar_btn-hide {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    transition: 0.8s;
+    background-color: transparent;
+    border: none;
+    transform: rotate(360deg);
+    transition: 1s;
 
   }
 
@@ -316,9 +291,8 @@
     justify-content: center;
     gap: 20px;
     margin: 0px auto;
+    padding: 0px;
 
-    /* margin-left: 0px;
-    padding: 0px 0px; */
 
 
   }
