@@ -39,6 +39,9 @@ function App() {
     };
   }, []);
 
+
+  const [currentElement , setCurrentElement] = useState('home');
+
     // useEffect is used to perform side effects in functional components.
   // Here, it's used to register scroll events and update scrollSpy when the component mounts.
   useEffect(() => {
@@ -50,7 +53,8 @@ function App() {
 
     // Registering the 'end' event and logging it to the console when triggered.
     Events.scrollEvent.register('end', (to, element) => {
-      console.log('end', to, element);
+      console.log('end', to);
+      setCurrentElement(to);
     });
 
     // Updating scrollSpy when the component mounts.
@@ -164,28 +168,28 @@ smooth={true}
 
 
 <div className='Body'>
-<Element name="home" className="element">
+<Element name="home" className={`element ${currentElement}`}>
 <Home/>
 </Element>
-<Element name="about" className="element">
+<Element name="about" className={`element ${currentElement}`}>
 <About/>
 </Element>
-<Element name="skills" className="element">
+<Element name="skills" className={`element ${currentElement}`}>
 <Skills/>
 </Element>
-<Element name="services" className="element">
+<Element name="services" className={`element ${currentElement}`}>
 <Services/>
 </Element>
-<Element name="experience" className="element">
+<Element name="experience" className={`element ${currentElement}`}>
 <Experience/>
 </Element>
-<Element name="education" className="element">
+<Element name="education" className={`element ${currentElement}`}>
 <Education/>
 </Element>
-<Element name="work" className="element">
+<Element name="work" className={`element ${currentElement}`}>
 <Work/>
 </Element>
-<Element name="contact" className="element">
+<Element name="contact" className={`element ${currentElement}`}>
 <Contact/>
 </Element>
 </div>

@@ -38,7 +38,32 @@
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
+
 }
+
+/* .about-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+
+    animation: down-up 2s ease;
+
+
+
+}
+
+@keyframes down-up {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
 
 @media (max-width:1400px) {
     .about-page-container {
