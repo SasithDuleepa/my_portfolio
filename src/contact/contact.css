@@ -1,7 +1,8 @@
 .contact-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
+    margin-top: 50px;
     padding: 0px 10px;
 
 }
@@ -15,12 +16,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
+    margin-top: 50px;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 85px;
     margin: 10px 0px;
 }
 
@@ -66,7 +68,7 @@
     /* background-color: rgb(46, 198, 198); */
     padding: 20px 0px;
     width: 45%;
-    gap: 25px;
+    gap: 45px;
 
 
 }

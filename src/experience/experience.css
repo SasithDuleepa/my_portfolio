@@ -1,6 +1,7 @@
 .experience-card-container {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 .exp-card-div {
