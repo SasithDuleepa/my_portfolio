@@ -1,4 +1,7 @@
-.service-container {}
+.service-container {
+    width: 100%;
+
+}
 
 
 
@@ -13,6 +16,7 @@
 
 @media (max-width : 1400px) {
     .service-container {
-        padding: 0px 10px;
+        width: 98vw;
+
     }
 }

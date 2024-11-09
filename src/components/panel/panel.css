@@ -72,7 +72,7 @@
 
 
 @media (max-width:1400px) {
-    .panel-main {
+    /* .panel-main {
 
         margin-right: 0px;
         display: flex;
@@ -82,5 +82,5 @@
         padding: 0px 0px;
         margin: auto;
 
-    }
+    } */
 }

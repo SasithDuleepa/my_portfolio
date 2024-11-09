@@ -8,7 +8,7 @@ import Image2 from './../assets/my2.png';
 import Download from './../assets/download.png';
 
 export default function Home() {
-  const [currectSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className='home-page-container'>
 
-      <img src={currectSlide === 0 ? Image1 : Image2} alt="Image 1" className={currectSlide === 0 ? 'slide1' : 'slide2'} />
+      <img alt='' src={currentSlide === 0 ? Image1 : Image2} className={currentSlide === 0 ? 'slide1' : 'slide2'} />
 
 
       <div className='home-text-container'>
@@ -37,10 +37,10 @@ export default function Home() {
       </div>
 
       <div className='slider-btn-div'>
-        <button className={currectSlide === 0 ?'slide-btn-active' :'slide-btn' } onClick={()=>{
+        <button className={currentSlide === 0 ?'slide-btn-active' :'slide-btn' } onClick={()=>{
           setCurrentSlide(0)
         }}></button>
-        <button  className={currectSlide === 1 ?'slide-btn-active' :'slide-btn' } onClick={()=>{
+        <button  className={currentSlide === 1 ?'slide-btn-active' :'slide-btn' } onClick={()=>{
           setCurrentSlide(1)
         }}></button>
       </div>

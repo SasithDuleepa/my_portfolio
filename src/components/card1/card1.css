@@ -1,41 +1,60 @@
 .card1-container {
-    background-color: aliceblue;
+    box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.346);
+    background-color: #f2f3f7;
     width: 80px;
-    height: 100px;
+    height: 120px;
     padding: 30px 50px;
-    border-bottom: 2px solid blue;
+    /* border-bottom: 3px solid blue; */
     margin: 50px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+        transition: .2s;
+        width: 80px;
+        height: 117px;
+        border-bottom: 3px solid rgb(21, 11, 216);
+        background-color: #e2e5f0;
+    }
 }
 
 .card1-icon {
-    width: 50px;
+    width: 70px;
     margin-top: 10px;
 
 }
 
 .card1-p {
-    font-family: "Quicksand", Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
     font-size: 16px;
-    font-weight: 500;
-    margin: 30px auto;
+    font-weight: 600;
+    margin-top: 30px;
+    letter-spacing: 1px;
 }
 
 @media (max-width:1400px) {
     .card1-container {
-        background-color: aliceblue;
-        width: 55px;
+        box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.346);
+        background-color: #f2f3f7;
+        width: 50px;
         height: 80px;
         padding: 30px 50px;
-        border-bottom: 2px solid blue;
         margin: 10px auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        &:hover {
+            transition: .2s;
+            width: 50px;
+            height: 80px;
+            border-bottom: 3px solid rgb(21, 11, 216);
+            background-color: #e2e5f0;
+        }
 
 
     }
@@ -64,10 +83,11 @@
     }
 
     .card1-p {
-        font-family: "Quicksand", Arial, sans-serif;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
         font-size: 14px;
         font-weight: 500;
-        margin: 30px auto;
+        margin-top: 30px;
     }
 
 }

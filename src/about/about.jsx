@@ -6,6 +6,17 @@ import Frontend from './../assets/front-end-programming.png'
 import Backend from './../assets/backend.png';
 import System from './../assets/dns.png';
 
+import Python from './../assets/tech/python.png';
+import Html from './../assets/tech/html.png';
+import Javascript from './../assets/tech/javascript.png';
+import Tailwind from './../assets/tech/tailwind-css.png';
+import Css from './../assets/tech/css.png';
+import ReactJs from './../assets/tech/react-js.png';
+import NodeJs from './../assets/tech/node-js.png';
+import Arduino from './../assets/tech/arduino.png';
+import Mongodb from './../assets/tech/mongodb .png';
+import Mysql from './../assets/tech/mysql1.png';
+
 export default function About() {
   return (
     <div className='about-page-container'>
@@ -30,10 +41,16 @@ export default function About() {
          </p>
     
     <div className='about-card-container'>
-      <Card1 icon = {Frontend} title = 'Frontend Developer'/>
-      <Card1 icon = {Backend} title = 'Backend Developer'/>
-      <Card1 icon = {System} title = 'System Developer'/>
-      <Card1 icon = {Iot} title = 'IoT Developer'/>
+      <Card1 icon = {Html} title = 'HTML'/>
+      <Card1 icon = {Javascript} title = 'Javascript'/>
+      <Card1 icon = {Tailwind} title = 'Tailwind css'/>
+      <Card1 icon = {Css} title = 'CSS'/>
+      <Card1 icon = {ReactJs} title = 'React js'/>
+      <Card1 icon = {NodeJs} title = 'Node js'/>
+      <Card1 icon = {Arduino} title = 'Arduino'/>
+      <Card1 icon = {Python} title = 'Python'/>
+      <Card1 icon = {Mongodb} title = 'mongo db'/>
+      <Card1 icon = {Mysql} title = 'mysql'/>
 
     </div>
     </div>

@@ -26,4 +26,12 @@
     background-size: cover;
 }
 
-@media (max-width:1400px) {}
+@media (max-width:1400px) {
+    .work-card-container {
+        width: 98vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+}

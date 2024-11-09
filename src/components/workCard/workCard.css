@@ -23,35 +23,59 @@
 }
 
 .work-card-main:hover .work-card-main-shade {
-    transform: translateY(-210px);
+    transform: translateY(-0px);
 }
 
 .work-card-main-shade {
     width: 200px;
     height: 200px;
-    background-color: rgba(75, 75, 75, 0.242);
+    background-color: rgba(0, 0, 0, 0.412);
     transition: 0.4s;
     position: relative;
     z-index: 1;
+    transform: translateY(-210px);
 }
 
 .work-card-title {
     z-index: 1;
     position: relative;
-    top: 1px;
-    margin-top: -0px;
+    top: -0px;
+    margin-top: -200px;
     margin-left: 5px;
 
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: "Quicksand", Arial, sans-serif;
+    font-family: 'Whispered Essence', sans-serif;
     color: rgb(237, 237, 237);
     transition: 0.5s;
+
+    transform: translateY(-60px);
+}
+
+.work-card-content {
+    z-index: 1;
+    position: relative;
+    top: 1px;
+    margin-top: 25px;
+    margin-left: 5px;
+
+    font-size: 15px;
+    color: rgb(237, 237, 237);
+    transition: 1s;
+    opacity: 0;
+
 }
 
 .work-card-main:hover .work-card-title {
-    transform: translateY(-50px);
+    transform: translateY(15px);
+
+
+}
+
+.work-card-main:hover .work-card-content {
+    opacity: 1;
+    transition: 2s;
 
 
 }
