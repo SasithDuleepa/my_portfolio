@@ -68,6 +68,8 @@
     /* Fully visible */
     padding: 1.5em;
     /* Restoring padding on all sides */
+
+    transition: .6s;
 }
 
 

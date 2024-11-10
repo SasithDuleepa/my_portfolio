@@ -9,6 +9,7 @@
     animation: left-right 2s ease;
 
 
+
 }
 
 @keyframes left-right {
@@ -24,6 +25,7 @@
 
 .work-card-main:hover .work-card-main-shade {
     transform: translateY(-0px);
+
 }
 
 .work-card-main-shade {
@@ -57,14 +59,15 @@
     z-index: 1;
     position: relative;
     top: 1px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-left: 5px;
+    text-align: justify;
 
     font-size: 15px;
     color: rgb(237, 237, 237);
     transition: 1s;
     opacity: 0;
-
+    margin-right: 5px
 }
 
 .work-card-main:hover .work-card-title {
@@ -76,6 +79,7 @@
 .work-card-main:hover .work-card-content {
     opacity: 1;
     transition: 2s;
+
 
 
 }

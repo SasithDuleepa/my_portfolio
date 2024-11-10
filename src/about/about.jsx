@@ -1,10 +1,6 @@
 import React from 'react';
 import './about.css';
 import Card1 from '../components/card1/card1';
-import Iot from './../assets/iot-solution.png'
-import Frontend from './../assets/front-end-programming.png'
-import Backend from './../assets/backend.png';
-import System from './../assets/dns.png';
 
 import Python from './../assets/tech/python.png';
 import Html from './../assets/tech/html.png';
@@ -40,19 +36,7 @@ export default function About() {
          This is not just the story of a developer; it’s the story of someone who believes that every project holds a new adventure. And for Sasith, the adventure has only just begun.
          </p>
     
-    <div className='about-card-container'>
-      <Card1 icon = {Html} title = 'HTML'/>
-      <Card1 icon = {Javascript} title = 'Javascript'/>
-      <Card1 icon = {Tailwind} title = 'Tailwind css'/>
-      <Card1 icon = {Css} title = 'CSS'/>
-      <Card1 icon = {ReactJs} title = 'React js'/>
-      <Card1 icon = {NodeJs} title = 'Node js'/>
-      <Card1 icon = {Arduino} title = 'Arduino'/>
-      <Card1 icon = {Python} title = 'Python'/>
-      <Card1 icon = {Mongodb} title = 'mongo db'/>
-      <Card1 icon = {Mysql} title = 'mysql'/>
 
-    </div>
     </div>
   )
 }
