@@ -1,6 +1,6 @@
 .panel-main {
 
-    margin-right: 50px;
+    /* margin-right: 50px; */
     display: flex;
     flex-direction: column;
     padding: 0px 50px;
@@ -74,15 +74,11 @@
 
 
 @media (max-width:1400px) {
-    /* .panel-main {
+    .panel-main {
 
         margin-right: 0px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 0px;
-        margin: auto;
-
-    } */
+        padding: 0px 50px;
+    }
 }
