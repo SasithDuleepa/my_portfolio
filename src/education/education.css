@@ -1,6 +1,8 @@
 .edu-page-container {
     /* width: 83vw; */
     width: 100%;
+    background-color: aqua;
+
 }
 
 
@@ -14,11 +16,4 @@
     margin-top: 50px;
 }
 
-@media (max-width : 1400px) {
-    .edu-page-container {
-        width: 98vw;
-
-    }
-
-
-}
+@media (max-width : 1400px) {}

@@ -10,7 +10,7 @@ import WorkCard from '../components/workCard/workCard';
 
 export default function Work() {
   return (
-    <div className='page-container'>
+    <div className='work-page-container'>
             <p className='header-p1'>MY WORK</p>
             <p className='header-p2'>RECENT WORK</p>
 

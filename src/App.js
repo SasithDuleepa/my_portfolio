@@ -195,7 +195,7 @@ smooth={true}
 </div>
 </div>
 
-<p className='bottom-text'>© Copyright 2024 All rights reserved.</p>
+{/* <p className='bottom-text'>© Copyright 2024 All rights reserved.</p> */}
     </div>
 
   );

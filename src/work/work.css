@@ -1,3 +1,8 @@
+.work-page-container {
+    width: 100%;
+    background-color: rgb(88, 32, 23);
+}
+
 .work-card-container {
     display: flex;
     flex-wrap: wrap;
@@ -28,8 +33,12 @@
 }
 
 @media (max-width:1400px) {
+    .work-page-container {
+        width: 100vw;
+        margin: auto 10px;
+    }
+
     .work-card-container {
-        width: 98vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;

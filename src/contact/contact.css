@@ -111,21 +111,24 @@
 
 
 @media (max-width:1400px) {
+    .contact-container {
+        width: 100vw;
+    }
+
     .contact-info {
         display: flex;
         flex-direction: column;
         gap: 50px;
-        margin-top: 20px;
-        padding: 0px 10px;
+        margin: 20px auto auto auto;
     }
 
     .contact-form {
-        /* display: flex;
-        flex-direction: column; */
-
+        display: flex;
+        flex-direction: column;
+        margin: auto auto;
         /* background-color: rgb(46, 198, 198); */
         padding: 20px 0px;
-        width: 100%;
+        width: 80%;
         gap: 10px;
 
 
