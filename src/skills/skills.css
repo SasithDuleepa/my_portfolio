@@ -174,7 +174,8 @@
 
 @media (max-width: 1400px) {
     .skills-container {
-        width: 100vw;
+        width: 96vw;
+        padding: 0px 5px;
     }
 
     .skills-bar-container {

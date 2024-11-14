@@ -67,6 +67,7 @@
 
 @media (max-width:1400px) {
     .about-page-container {
-        width: 100vw;
+        width: 96vw;
+        padding: 0px 5px;
     }
 }

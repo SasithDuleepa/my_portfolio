@@ -16,8 +16,9 @@
 
 @media (max-width : 1400px) {
     .service-container {
-        width: 100vw;
-        background-color: blue;
+        width: 96vw;
+        padding: 0px 5px;
+
 
     }
 

@@ -18,6 +18,21 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  const DownloadCV = () => {
+    const cvUrl = require('./../assets/sasith.pdf'); // Correct path for Webpack to bundle the file
+  
+    // Create a temporary link element
+    const link = document.createElement("a");
+    link.href = cvUrl;
+    link.download = "Sasith_Duleepa_CV.pdf"; // Set the file name here
+  
+    // Append the link, trigger the download, and then remove it
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  
+
 
   return (
     <div className='home-page-container'>
@@ -26,10 +41,19 @@ export default function Home() {
 
 
       <div className='home-text-container'>
-        <h1 className='home-text-p1'>Hi!<br/> I'm sasith</h1>
-        <p  className='home-text-p2'>Full Stack Developer</p>
+        
+        {currentSlide ===  0 ? 
+        <h1 className='home-text-p1'>Hi!<br/> I'm Sasith</h1>
+        :
+        <h1 className='home-text-p1'>Hello!</h1>}
+        
 
-        <button className='cv-btn'>
+        {currentSlide ===  0 ? 
+        <p  className='home-text-p2'>Full Stack Developer</p>
+        :
+        <p  className='home-text-p2'>Welcome to My Portfolio</p>}
+
+        <button className='cv-btn' onClick={DownloadCV}>
           <p className='cv-btn-text'>DOWNLOAD CV</p>
           <img src={Download} alt="Download" className='download-icon' />
         </button>

@@ -112,7 +112,12 @@
 
 @media (max-width:1400px) {
     .contact-container {
-        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+        margin-top: 50px;
+        padding: 0px 0px;
     }
 
     .contact-info {

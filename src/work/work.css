@@ -1,6 +1,6 @@
 .work-page-container {
     width: 100%;
-    background-color: rgb(88, 32, 23);
+
 }
 
 .work-card-container {
@@ -34,8 +34,9 @@
 
 @media (max-width:1400px) {
     .work-page-container {
-        width: 100vw;
-        margin: auto 10px;
+        width: 96vw;
+        padding: 0px 5px;
+
     }
 
     .work-card-container {
