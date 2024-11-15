@@ -2,7 +2,7 @@ import './App.css';
 
 
 import React, { useEffect, useState } from 'react';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 import Work from './work/work';
 import Skills from './skills/skills';
@@ -20,26 +20,6 @@ import Close from './../src/assets/close.png';
 
 function App() {
 
-  const [isWidth1400, setIsWidth1400] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia(' (min-width: 1400px)');
-
-    const handleChange = (e) => {
-      setIsWidth1400(e.matches);
-    };
-
-    mediaQuery.addEventListener('change', handleChange);
-
-    // Set initial value
-    setIsWidth1400(mediaQuery.matches);
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleChange);
-    };
-  }, []);
-
-
   const [currentElement , setCurrentElement] = useState('home');
 
     // useEffect is used to perform side effects in functional components.
@@ -48,12 +28,12 @@ function App() {
     
     // Registering the 'begin' event and logging it to the console when triggered.
     Events.scrollEvent.register('begin', (to, element) => {
-      console.log('begin', to, element);
+      // console.log('begin', to, element);
     });
 
     // Registering the 'end' event and logging it to the console when triggered.
     Events.scrollEvent.register('end', (to, element) => {
-      console.log('end', to);
+      // console.log('end', to);
       setCurrentElement(to);
     });
 
@@ -74,7 +54,7 @@ function App() {
    return (
     <div>
 <button className={show ? "sidebar_btn-show":"sidebar_btn-hide" } onClick={()=>setShow(!show)}> 
-       <img src={show ? Close : Menu} className='sidemenu-icon' /></button>
+       <img alt='' src={show ? Close : Menu} className='sidemenu-icon' /></button>
       
       
           <div className='App'>
