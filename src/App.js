@@ -8,6 +8,7 @@ import Work from './work/work';
 import Skills from './skills/skills';
 import Services from './services/services';
 import Home from './home/home';
+import Hero from './hero/hero';
 import Experience from './experience/experience';
 import Education from './education/education';
 import Contact from './contact/contact';
@@ -148,8 +149,11 @@ smooth={true}
 
 
 <div className='Body'>
-<Element name="home" className={`element ${currentElement}`}>
+{/* <Element name="home" className={`element ${currentElement}`}>
 <Home/>
+</Element> */}
+<Element name="home" className={`element ${currentElement}`}>
+<Hero/>
 </Element>
 <Element name="about" className={`element ${currentElement}`}>
 <About/>
