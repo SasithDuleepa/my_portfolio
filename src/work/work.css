@@ -32,6 +32,11 @@
     background-size: cover;
 }
 
+.img5 {
+    background-image: url('./../assets/ecommerce.jpg');
+    background-size: cover;
+}
+
 @media (max-width:1400px) {
     .work-page-container {
         width: 96vw;

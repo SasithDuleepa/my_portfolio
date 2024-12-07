@@ -24,11 +24,17 @@ export default function Home() {
     // Create a temporary link element
     const link = document.createElement("a");
     link.href = cvUrl;
-    link.download = "Sasith_Duleepa_CV.pdf"; // Set the file name here
+    link.download = "sasith.pdf"; 
+    // link.setAttribute(
+    //   'download',
+    //   `FileName.pdf`,
+    // );
+
   
     // Append the link, trigger the download, and then remove it
     document.body.appendChild(link);
     link.click();
+    link.parentNode.removeChild(link);
     document.body.removeChild(link);
   };
   
