@@ -14,6 +14,8 @@ import Mongodb from './../assets/tech/mongodb .png';
 import Mysql from './../assets/tech/mysql1.png';
 import Expressjs from './../assets/tech/expressjs.png';
 import Git from './../assets/tech/git.png';
+import NextJs from './../assets/tech/nextjs.png';
+import Django from './../assets/tech/django.png';
 
 
 export default function Skills() {
@@ -36,7 +38,9 @@ export default function Skills() {
       <Card1 icon = {Tailwind} title = 'Tailwind css'/>
       <Card1 icon = {Css} title = 'CSS'/>
       <Card1 icon = {ReactJs} title = 'React js'/>
+      <Card1 icon = {NextJs} title='Next js'/>
       <Card1 icon = {NodeJs} title = 'Node js'/>
+      <Card1 icon = {Django} title='django'/>
       <Card1 icon = {Arduino} title = 'Arduino'/>
       <Card1 icon = {Python} title = 'Python'/>
       <Card1 icon = {Mongodb} title = 'mongo db'/>
