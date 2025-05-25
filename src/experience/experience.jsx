@@ -1,12 +1,19 @@
 import React from 'react';
 import './experience.css';
+import useIntersectionObserver from '../hooks/useIntersectionObserver'; // Import the hook
 
 import Icon from '../assets/legal_13794759.svg';
 
 export default function Experience() {
-  return (
-    <div className='exp-page-container'>
+  const [elementRef, isVisible] = useIntersectionObserver({
+    threshold: 0.1, // Trigger when 10% of the element is visible
+  });
 
+  return (
+    <div 
+      ref={elementRef}
+      className={`exp-page-container section-entry ${isVisible ? 'is-visible' : ''}`}
+    >
       <p className='header-p1'>Experience</p>
       <p className='header-p2'>Work Experience</p>
       

@@ -1,0 +1,84 @@
+Source	Size
+../node_modules/web-vitals/dist/web-vitals.js	4284
+[unmapped]	189
+[sourceMappingURL]	46
+[no source]	5
+[EOLs]	1
+
+../node_modules/react-dom/cjs/react-dom.production.min.js	129554
+skills/skills.jsx	56127
+App.js	13433
+hero/hero.jsx	11706
+components/panel/panel.jsx	10053
+../node_modules/react/cjs/react.production.min.js	6447
+../node_modules/react-scroll/modules/mixins/Helpers.js	4788
+../node_modules/react-scroll/modules/mixins/scroll-link.js	4658
+../node_modules/react-scroll/modules/mixins/animate-scroll.js	4298
+../node_modules/scheduler/cjs/scheduler.production.min.js	3834
+contact/contact.jsx	2453
+experience/experience.jsx	2267
+../node_modules/react-scroll/modules/mixins/scroll-element.js	2004
+../node_modules/react-lazy-load/dist/LazyLoad.js	1984
+../node_modules/react-scroll/modules/mixins/scroll-spy.js	1960
+../node_modules/lodash.throttle/index.js	1857
+../node_modules/react-scroll/modules/components/Element.js	1630
+work/work.jsx	1400
+about/about.jsx	1362
+../node_modules/react-scroll/modules/mixins/utils.js	1360
+education/education.jsx	1328
+../node_modules/react-scroll/modules/components/Button.js	1265
+../node_modules/react-scroll/modules/mixins/scroller.js	1215
+../node_modules/react-scroll/modules/mixins/scroll-hash.js	1177
+../node_modules/react-scroll/modules/components/Link.js	1094
+../webpack/runtime/jsonp chunk loading	799
+../node_modules/react-scroll/modules/mixins/smooth.js	791
+services/services.jsx	787
+../node_modules/@emailjs/browser/es/methods/sendForm/sendForm.js	782
+../webpack/runtime/load script	741
+../node_modules/prop-types/factoryWithThrowingShims.js	648
+components/card1/card1.jsx	630
+../node_modules/react/cjs/react-jsx-runtime.production.min.js	576
+../node_modules/react-scroll/modules/mixins/passive-event-listeners.js	572
+components/card2/card2.jsx	467
+../node_modules/react-scroll/modules/index.js	461
+../node_modules/@emailjs/browser/es/utils/validateParams/validateParams.js	344
+components/workCard/workCard.jsx	315
+../node_modules/react-scroll/modules/mixins/cancel-events.js	289
+../node_modules/react-dom/index.js	253
+../node_modules/@emailjs/browser/es/utils/isLimitRateHit/isLimitRateHit.js	231
+../node_modules/@emailjs/browser/es/utils/createWebStorage/createWebStorage.js	214
+../node_modules/@emailjs/browser/es/api/sendPost.js	214
+../node_modules/@emailjs/browser/es/utils/isBlockedValueInParams/isBlockedValueInParams.js	212
+../node_modules/react-scroll/modules/mixins/scroll-events.js	209
+../node_modules/@emailjs/browser/es/models/EmailJSResponseStatus.js	185
+../node_modules/@emailjs/browser/es/utils/validateLimitRateParams/validateLimitRateParams.js	175
+../webpack/runtime/make namespace object	168
+../webpack/runtime/global	167
+reportWebVitals.js	155
+../node_modules/@emailjs/browser/es/utils/validateBlockListParams/validateBlockListParams.js	153
+../node_modules/@emailjs/browser/es/utils/validateForm/validateForm.js	132
+../webpack/bootstrap	128
+index.js	118
+../node_modules/scheduler/index.js	110
+../webpack/runtime/define property getters	101
+../node_modules/react-dom/client.js	98
+[unmapped]	97
+../node_modules/prop-types/lib/ReactPropTypesSecret.js	86
+../node_modules/@emailjs/browser/es/utils/buildOptions/buildOptions.js	82
+../webpack/runtime/ensure chunk	80
+assets/legal_13794759.svg	79
+../node_modules/@emailjs/browser/es/store/store.js	73
+../webpack/runtime/hasOwnProperty shorthand	59
+../node_modules/@emailjs/browser/es/utils/isHeadless/isHeadless.js	55
+../node_modules/@emailjs/browser/es/errors/headlessError/headlessError.js	52
+../node_modules/react/index.js	46
+../node_modules/react/jsx-runtime.js	45
+../node_modules/prop-types/index.js	43
+../webpack/runtime/get javascript chunk filename	43
+[sourceMappingURL]	41
+../node_modules/@emailjs/browser/es/errors/limitRateError/limitRateError.js	37
+../node_modules/@emailjs/browser/es/errors/blockedEmailError/blockedEmailError.js	29
+../webpack/runtime/get mini-css chunk filename	17
+../webpack/runtime/publicPath	14
+../node_modules/@emailjs/browser/es/index.js	2
+[EOLs]	2

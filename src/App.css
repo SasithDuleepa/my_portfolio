@@ -20,7 +20,17 @@
   align-items: center;
   padding: 20px 0px;
   z-index: 2;
-  transition: 1s;
+  transition: transform 1s ease; /* Only transition transform for the container */
+}
+
+/* Styles for the content wrapper */
+.sidebar-content-wrapper {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; /* Shorter fade for content */
+  width: 100%; /* Ensure it takes up full width of sidebar for centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Sidebar-hide {
@@ -35,7 +45,13 @@
   align-items: center;
   padding: 20px 0px;
   z-index: 2;
-  transition: 1s;
+  transition: transform 1s ease; /* Only transition transform for the container */
+  /* transform: translateX(-255px); /* This is already in the media query, ensure it's there */
+}
+
+.Sidebar-hide .sidebar-content-wrapper {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Faster fade out for content */
 }
 
 .sidebar-img {
@@ -241,7 +257,8 @@
     align-items: center;
     padding: 20px 0px;
     z-index: 2;
-    transition: 1s;
+    /* transition: 1s; */ /* Original transition, now more specific */
+    transition: transform 1s ease;
   }
 
   .Sidebar-hide {
@@ -257,9 +274,15 @@
     padding: 20px 0px;
     z-index: 2;
     transform: translateX(-255px);
-    transition: 1s;
+    /* transition: 1s; */ /* Original transition, now more specific */
+    transition: transform 1s ease; 
   }
 
+  /* Ensure content within Sidebar-hide (when sidebar is closed) is also hidden by opacity */
+  .Sidebar-hide .sidebar-content-wrapper {
+    opacity: 0;
+    /* transition: opacity 0.3s ease-in-out; */ /* Ensure this is consistent or adjusted */
+  }
 
   .sidemenu-icon {
     width: 20px;

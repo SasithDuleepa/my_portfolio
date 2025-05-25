@@ -1,16 +1,19 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.css';
+import useIntersectionObserver from '../hooks/useIntersectionObserver'; // Import the hook
 
-import Location from '../assets/map.png';
-import Linkedin from '../assets/linkedin.png';
-import Github from '../assets/github.png';
-import Gmail from '../assets/gmail.png';
+import Location from '../assets/map.webp';
+import Linkedin from '../assets/linkedin.webp';
+import Github from '../assets/github.webp';
+import Gmail from '../assets/gmail.webp';
 
 
 
 export default function Contact() {
-
+  const [elementRef, isVisible] = useIntersectionObserver({
+    threshold: 0.1, // Trigger when 10% of the element is visible
+  });
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -30,7 +33,10 @@ export default function Contact() {
   };
   
   return (
-    <div className='contact-container'>
+    <div 
+      ref={elementRef}
+      className={`contact-container section-entry ${isVisible ? 'is-visible' : ''}`}
+    >
       <p className='header-p1'>GET IN TOUCH</p>
       <p className='header-p2'>CONTACT</p>
 

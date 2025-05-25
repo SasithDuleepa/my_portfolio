@@ -1,14 +1,22 @@
 import React from 'react';
 import './services.css';
 import Card2 from '../components/card2/card2';
+import useIntersectionObserver from '../hooks/useIntersectionObserver'; // Import the hook
 
-import Icon1 from '../assets/backend.png';
-import Icon2 from '../assets/dns.png';
-import Icon3 from '../assets/iot-solution.png';
+import Icon1 from '../assets/backend.webp';
+import Icon2 from '../assets/dns.webp';
+import Icon3 from '../assets/iot-solution.webp';
 
 export default function Services() {
+  const [elementRef, isVisible] = useIntersectionObserver({
+    threshold: 0.1, // Trigger when 10% of the element is visible
+  });
+
   return (
-    <div className='service-container'>
+    <div 
+      ref={elementRef}
+      className={`service-container section-entry ${isVisible ? 'is-visible' : ''}`}
+    >
       <p className='header-p1'>What I do ?</p>
       <p className='header-p2'>Here are some of my <br/> expertise</p>
       <div className='service-card-container'>

@@ -1,12 +1,20 @@
 import React from 'react';
 import './education.css';
 import Panel from '../components/panel/panel';
+import useIntersectionObserver from '../hooks/useIntersectionObserver'; // Import the hook
 
 
 
 export default function Education() {
+  const [elementRef, isVisible] = useIntersectionObserver({
+    threshold: 0.1, // Trigger when 10% of the element is visible
+  });
+
   return (
-    <div className='edu-page-container'>
+    <div 
+      ref={elementRef}
+      className={`edu-page-container section-entry ${isVisible ? 'is-visible' : ''}`}
+    >
       <p className='header-p1'>Education</p>
       <p className='header-p2'>Education</p>
 

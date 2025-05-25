@@ -1,22 +1,29 @@
 import React from 'react';
 import './about.css';
 import Card1 from '../components/card1/card1';
+import useIntersectionObserver from '../hooks/useIntersectionObserver'; // Import the hook
 
-import Python from './../assets/tech/python.png';
-import Html from './../assets/tech/html.png';
-import Javascript from './../assets/tech/javascript.png';
-import Tailwind from './../assets/tech/tailwind-css.png';
-import Css from './../assets/tech/css.png';
-import ReactJs from './../assets/tech/react-js.png';
-import NodeJs from './../assets/tech/node-js.png';
-import Arduino from './../assets/tech/arduino.png';
-import Mongodb from './../assets/tech/mongodb .png';
-import Mysql from './../assets/tech/mysql1.png';
+import Python from './../assets/tech/python.webp';
+import Html from './../assets/tech/html.webp';
+import Javascript from './../assets/tech/javascript.webp';
+import Tailwind from './../assets/tech/tailwind-css.webp';
+import Css from './../assets/tech/css.webp';
+import ReactJs from './../assets/tech/react-js.webp';
+import NodeJs from './../assets/tech/node-js.webp';
+import Arduino from './../assets/tech/arduino.webp';
+import Mongodb from './../assets/tech/mongodb.webp';
+import Mysql from './../assets/tech/mysql1.webp';
 
 export default function About() {
-  return (
-    <div className='about-page-container'>
+  const [elementRef, isVisible] = useIntersectionObserver({
+    threshold: 0.1, // Trigger when 10% of the element is visible
+  });
 
+  return (
+    <div 
+      ref={elementRef} 
+      className={`about-page-container section-entry ${isVisible ? 'is-visible' : ''}`}
+    >
       <p className='about-p header-p1'>ABOUT ME</p>
 
       <p className='about-p1 header-p2'>WHO AM I ?</p>

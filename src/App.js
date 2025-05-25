@@ -1,22 +1,25 @@
 import './App.css';
 
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react'; // Added Suspense
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
-import Work from './work/work';
-import Skills from './skills/skills';
-import Services from './services/services';
-import Home from './home/home';
-import Hero from './hero/hero';
-import Experience from './experience/experience';
-import Education from './education/education';
-import Contact from './contact/contact';
-import About from './about/about';
+// Static imports first
+import Hero from './hero/hero'; // Hero is likely above the fold, so not lazy loading
+import My from './../src/assets/my3.webp';
+import Menu from './../src/assets/menu.webp';
+import Close from './../src/assets/close.webp';
 
-import My from './../src/assets/my3.png';
-import Menu from './../src/assets/menu.png';
-import Close from './../src/assets/close.png';
+// Lazy load components
+const Work = React.lazy(() => import('./work/work'));
+const Skills = React.lazy(() => import('./skills/skills'));
+const Services = React.lazy(() => import('./services/services'));
+// Home is commented out, so no need to lazy load it for now
+// import Home from './home/home'; 
+const Experience = React.lazy(() => import('./experience/experience'));
+const Education = React.lazy(() => import('./education/education'));
+const Contact = React.lazy(() => import('./contact/contact'));
+const About = React.lazy(() => import('./about/about'));
 
 
 function App() {
@@ -63,15 +66,15 @@ function App() {
 
 
 <div  className={show ? 'Sidebar':' Sidebar-hide'}>
-  
-<img src={My} alt="My" className='sidebar-img'/>
-<p className='sidebar-name'>Sasith Duleepa</p>
+  <div className="sidebar-content-wrapper"> {/* Added wrapper */}
+    <img src={My} alt="My" className='sidebar-img'/>
+    <p className='sidebar-name'>Sasith Duleepa</p>
 
-<p className='occupation-p'>SOFTWARE ENGINEER IN SRI LANKA</p>
+    <p className='occupation-p'>SOFTWARE ENGINEER IN SRI LANKA</p>
 
 
 
-<Link
+    <Link
 className="link"
 activeClass="link active"
 to="home"
@@ -131,16 +134,9 @@ to="contact"
 spy={true}
 smooth={true}
 
->CONTACT</Link>
+    >CONTACT</Link>
 
-
-
-
-
-
-
-
-
+  </div> {/* End of wrapper */}
 </div>
 
 
@@ -153,29 +149,31 @@ smooth={true}
 <Home/>
 </Element> */}
 <Element name="home" className={`element ${currentElement}`}>
-<Hero/>
+  <Hero/>
 </Element>
-<Element name="about" className={`element ${currentElement}`}>
-<About/>
-</Element>
-<Element name="skills" className={`element ${currentElement}`}>
-<Skills/>
-</Element>
-<Element name="services" className={`element ${currentElement}`}>
-<Services/>
-</Element>
-<Element name="experience" className={`element ${currentElement}`}>
-<Experience/>
-</Element>
-<Element name="education" className={`element ${currentElement}`}>
-<Education/>
-</Element>
-<Element name="work" className={`element ${currentElement}`}>
-<Work/>
-</Element>
-<Element name="contact" className={`element ${currentElement}`}>
-<Contact/>
-</Element>
+<Suspense fallback={<p>Loading...</p>}>
+  <Element name="about" className={`element ${currentElement}`}>
+    <About/>
+  </Element>
+  <Element name="skills" className={`element ${currentElement}`}>
+    <Skills/>
+  </Element>
+  <Element name="services" className={`element ${currentElement}`}>
+    <Services/>
+  </Element>
+  <Element name="experience" className={`element ${currentElement}`}>
+    <Experience/>
+  </Element>
+  <Element name="education" className={`element ${currentElement}`}>
+    <Education/>
+  </Element>
+  <Element name="work" className={`element ${currentElement}`}>
+    <Work/>
+  </Element>
+  <Element name="contact" className={`element ${currentElement}`}>
+    <Contact/>
+  </Element>
+</Suspense>
 </div>
 </div>
 <p className='bottom-text'>© Copyright 2024 All rights reserved.</p>
