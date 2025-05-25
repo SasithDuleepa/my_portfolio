@@ -1,26 +1,34 @@
 import React from 'react';
 import './skills.css';
 import Card1 from '../components/card1/card1';
+import useIntersectionObserver from '../hooks/useIntersectionObserver'; // Import the hook
 
-import Python from './../assets/tech/python.png';
-import Html from './../assets/tech/html.png';
-import Javascript from './../assets/tech/javascript.png';
-import Tailwind from './../assets/tech/tailwind-css.png';
-import Css from './../assets/tech/css.png';
-import ReactJs from './../assets/tech/react-js.png';
-import NodeJs from './../assets/tech/node-js.png';
-import Arduino from './../assets/tech/arduino.png';
-import Mongodb from './../assets/tech/mongodb .png';
-import Mysql from './../assets/tech/mysql1.png';
-import Expressjs from './../assets/tech/expressjs.png';
-import Git from './../assets/tech/git.png';
-import NextJs from './../assets/tech/nextjs.png';
-import Django from './../assets/tech/django.png';
+import Python from './../assets/tech/python.webp';
+import Html from './../assets/tech/html.webp';
+import Javascript from './../assets/tech/javascript.webp';
+import Tailwind from './../assets/tech/tailwind-css.webp';
+import Css from './../assets/tech/css.webp';
+import ReactJs from './../assets/tech/react-js.webp';
+import NodeJs from './../assets/tech/node-js.webp';
+import Arduino from './../assets/tech/arduino.webp';
+import Mongodb from './../assets/tech/mongodb.webp';
+import Mysql from './../assets/tech/mysql1.webp';
+import Expressjs from './../assets/tech/expressjs.webp';
+import Git from './../assets/tech/git.webp';
+import NextJs from './../assets/tech/nextjs.webp';
+import Django from './../assets/tech/django.webp';
 
 
 export default function Skills() {
+  const [elementRef, isVisible] = useIntersectionObserver({
+    threshold: 0.1, // Trigger when 10% of the element is visible
+  });
+
   return (
-    <div className='skills-container'>
+    <div 
+      ref={elementRef}
+      className={`skills-container section-entry ${isVisible ? 'is-visible' : ''}`}
+    >
       <p className='header-p1'>My Specialty</p>
       <p className='header-p2'>My Skills</p>
       <p className='body-p1'>Venturing into the world of tech, Sasith braved the wilds of JavaScript and scaled the heights of React and Node. 

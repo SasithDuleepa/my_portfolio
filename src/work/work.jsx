@@ -1,10 +1,18 @@
 import React from "react";
 import "./work.css";
 import WorkCard from "../components/workCard/workCard";
+import useIntersectionObserver from '../hooks/useIntersectionObserver'; // Import the hook
 
 export default function Work() {
+  const [elementRef, isVisible] = useIntersectionObserver({
+    threshold: 0.1, // Trigger for the section itself
+  });
+
   return (
-    <div className="work-page-container">
+    <div 
+      ref={elementRef}
+      className={`work-page-container section-entry ${isVisible ? 'is-visible' : ''}`}
+    >
       <p className="header-p1">MY WORK</p>
       <p className="header-p2">RECENT WORK</p>
 

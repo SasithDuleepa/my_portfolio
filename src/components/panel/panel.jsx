@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './panel.css';
 
-import Minus from './../../assets/minus (1).png';
-import Plus from './../../assets/plus-sign.png';
+import Minus from './../../assets/minus (1).webp';
+import Plus from './../../assets/plus-sign.webp';
 
 export default function Panel(props) {
     const [expand , setExpand] = useState(false);

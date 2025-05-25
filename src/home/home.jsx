@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import './home.css';
 
 
-import Image1 from './../assets/my1.png';
-import Image2 from './../assets/my2.png';
+import Image1 from './../assets/my1.webp';
+import Image2 from './../assets/my2.webp';
 
-import Download from './../assets/download.png';
+import Download from './../assets/download.webp';
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
